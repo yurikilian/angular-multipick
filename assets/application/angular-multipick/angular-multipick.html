@@ -8,10 +8,10 @@
 			</div>
 			<div class='col-md-1'>
 				<div class='multipick-selectors btn-group-vertical'>
-					<input class='btn btn-default' type='button' value='>' ng-click='add()'>
-					<input class='btn btn-default' type='button' value='<' ng-click='remove()'>
-					<input class='btn btn-default' type='button' value='>>' ng-click='addAll()'>
-					<input class='btn btn-default' type='button' value='<<' ng-click='removeAll()'>
+					<input ng-disabled="itens.length == 0" class='btn btn-default' type='button' value='>' ng-click='add()'>
+					<input ng-disabled="activeItens.length == 0" class='btn btn-default' type='button' value='<' ng-click='remove()'>
+					<input ng-disabled="itens.length == 0" class='btn btn-default' type='button' value='>>' ng-click='addAll()'>
+					<input ng-disabled="activeItens.length == 0" class='btn btn-default' type='button' value='<<' ng-click='removeAll()'>
 				</div>
 			</div>
 			<div class='col-md-5'>
