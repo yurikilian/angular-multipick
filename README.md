@@ -81,14 +81,14 @@ $scope.resultList = [];
 
 <span class="hljs-keyword">...</span></code></pre>
 
-<p><strong><em>Notes about customization:</em></strong></p>
+
+
+<h4 id="notes-about-customization">Notes about customization:</h4>
 
 <blockquote>
   <p>The style of select and options element were built on twitter bootstrap just for scaffolding.  <br>
   Feel free to change that and build your own style.</p>
 </blockquote>
-
-
 
 <h2 id="known-issues">Known Issues</h2>
 
