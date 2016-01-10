@@ -42,9 +42,9 @@
 
 <h5 id="the-source-list">The source list:</h5>
 
-<pre class="prettyprint"><code class=" hljs r">// the itens that will be used on multipick list
-app.controller(<span class="hljs-string">'MyCtrl'</span>,<span class="hljs-keyword">function</span>($scope){ 
+<pre class="prettyprint"><code class=" hljs r">app.controller(<span class="hljs-string">'MyCtrl'</span>,<span class="hljs-keyword">function</span>($scope){ 
 <span class="hljs-keyword">...</span>
+// the itens loaded on multipick <span class="hljs-keyword">source</span> list
 $scope.itens = [{
                     label:<span class="hljs-string">"My Item 1"</span>,
                     value:<span class="hljs-string">"myItem1"</span>
@@ -72,12 +72,10 @@ $scope.itens = [{
 <pre class="prettyprint"><code class=" hljs r">app.controller(<span class="hljs-string">'MyCtrl'</span>,<span class="hljs-keyword">function</span>($scope){ 
 <span class="hljs-keyword">...</span>
 
-// the itens that will be used on multipick list
+// the itens that will be used as result of multipick list
 $scope.resultList = [];
 
 <span class="hljs-keyword">...</span></code></pre>
-
-
 
 <h4 id="notes-about-customization">Notes about customization:</h4>
 
