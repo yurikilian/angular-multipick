@@ -90,7 +90,7 @@ $scope.resultList = [];
 
 
 
-<h3 id="known-issues"><strong><em>Known Issues: </em></strong></h3>
+<h2 id="known-issues">Known Issues</h2>
 
 <ul>
 <li>The double click event is fired by the select element. Even firing double click outside the selected options, it will go to the target list. This implementation uses HTML select elements and on Internet Explorer the  element doesn’t fire double click.</li>
