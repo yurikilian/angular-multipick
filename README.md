@@ -38,11 +38,9 @@
 
 <p>Following the example above, we need create the following JSON objects using Angular JS:</p>
 
-<ul>
-<li>The source list:</li>
-</ul>
 
 
+<h5 id="the-source-list">The source list:</h5>
 
 <pre class="prettyprint"><code class=" hljs r">// the itens that will be used on multipick list
 app.controller(<span class="hljs-string">'MyCtrl'</span>,<span class="hljs-keyword">function</span>($scope){ 
@@ -69,9 +67,7 @@ $scope.itens = [{
 ];
 <span class="hljs-keyword">...</span> </code></pre>
 
-<p>and a result list:</p>
-
-
+<h5 id="and-a-result-list">and a result list:</h5>
 
 <pre class="prettyprint"><code class=" hljs r">app.controller(<span class="hljs-string">'MyCtrl'</span>,<span class="hljs-keyword">function</span>($scope){ 
 <span class="hljs-keyword">...</span>
