@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>
+		Angular picklist
+	</title>
+	<script type="text/javascript" src="assets/vendor/jquery/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="assets/vendor/angular/angular.js"></script>
+	<script type="text/javascript" src="assets/vendor/angular-route/angular-route.js"></script>
+	
+	<link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap-narrow.css">
+
+	<script type="text/javascript" src="assets/application/angular-multipick.js"></script>
+
+	<script>
+		var app = angular.module('mainApp',['angular-multipick']);
+	
+		app.controller('MainCtrl',function($scope){
+			$scope.resultList = [];
+			$scope.lista = [];
+
+			$scope.itens = [{
+					label:"My Item 1",
+					value:"myItem1"
+				},{
+					label:"My Item 2",
+					value:"myItem2"
+				},{
+					label:"My Item 3",
+					value:"myItem3"
+				},{
+					label:"My Item 4",
+					value:"myItem4"
+				},{
+					label:"My Item 5",
+					value:"myItem5"
+				},{
+					label:"My Item 6",
+					value:"myItem6"
+				},
+			];
+
+		});
+	</script>
+
+</head>
+<body ng-app='mainApp'>
+
+	  <div class="container" ng-controller='MainCtrl'>
+      <div class="header clearfix">
+        <nav>
+        </nav>
+        <h3 class="text-muted">Angular picklist</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h1>Angular Picklist</h1>
+        <p class="lead">A Jquery UI / Primefaces picklist component built on angular js.</p>
+        <p><a class="btn btn-lg btn-success" href="#" role="button">Download v1.0.beta</a></p>
+      </div>
+
+	  	<div class="row">
+		    <div class="col-lg-12">
+				<div style="" multipick results="resultList" itens='itens'></div>
+		    </div>
+		</div>
+		
+      <footer class="footer">
+        <p>Developed by Yuri Kilian</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+	
+
+	
+		
+<script type="text/javascript" src="assets/vendor/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>	

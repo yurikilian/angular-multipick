@@ -1,0 +1,27 @@
+
+<div class="multipick-container">
+	<div class="form-inline">
+		<div class="row">
+			<div class="col-md-4">
+				<ul class="list-group">
+					<li ng-dblclick='addLi(this)' class="list-group-item" ng-repeat='item in itens'>{{item.label}}</li>
+				</ul>
+			</div>
+
+
+			<div class="col-md-2 multipick-selectors btn-group-vertical">
+				<input class='btn btn-default' type="button" value=">" ng-click='add()'>
+				<input class='btn btn-default' type="button" value="<" ng-click='remove()'>
+				<input class='btn btn-default' type="button" value=">>" ng-click='addAll()'>
+				<input class='btn btn-default' type="button" value="<<" ng-click='removeAll()'>
+			</div>
+
+
+			<div class="col-md-4">
+				<ul class="list-group">
+					<li ng-dblclick='addLi(this)' class="list-group-item" ng-repeat='item in activeItens'>{{item.label}}</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
