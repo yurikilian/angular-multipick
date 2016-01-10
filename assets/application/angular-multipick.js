@@ -56,6 +56,6 @@ angular.module('angular-multipick',[]).directive('multipick',['$timeout',functio
 				restrict: 'A',
 				controller : multipickController,
 				scope:{results: '=', 'itens': '='},
-				templateUrl: 'assets/application/angular-multipick.html'
+				templateUrl: 'angular-multipick.html'
 			}
 		}]);
