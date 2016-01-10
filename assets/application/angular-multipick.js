@@ -1,4 +1,9 @@
 angular.module('angular-multipick',[]).directive('multipick',['$timeout',function($timeout){
+
+			var currentScriptUrl = document.querySelector("script[src$='angular-multipick.js']").src;
+			var scriptBaseUrl = currentScriptUrl.split(location.href)[1].split('.js')[0];
+
+
 			var multipickController = ['$scope','$element',function($scope,$element){
 				$scope.selectedItens = [];
 				$scope.activeItens = [];			 	
@@ -56,6 +61,6 @@ angular.module('angular-multipick',[]).directive('multipick',['$timeout',functio
 				restrict: 'A',
 				controller : multipickController,
 				scope:{results: '=', 'itens': '='},
-				templateUrl: 'angular-multipick.html'
+				templateUrl: scriptBaseUrl + '.html'
 			}
 		}]);
