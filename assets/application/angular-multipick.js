@@ -1,6 +1,3 @@
-(function() {
-    'use strict';
-
 angular.module('angular-multipick',[]).directive('multipick',['$timeout',function($timeout){
 			var multipickController = ['$scope','$element',function($scope,$element){
 				$scope.selectedItens = [];
@@ -62,4 +59,3 @@ angular.module('angular-multipick',[]).directive('multipick',['$timeout',functio
 				templateUrl: 'assets/application/angular-multipick.html'
 			}
 		}]);
-})();
