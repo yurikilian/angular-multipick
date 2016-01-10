@@ -80,3 +80,18 @@ $scope.itens = [{
 $scope.resultList = [];
 
 <span class="hljs-keyword">...</span></code></pre>
+
+<p><strong><em>Notes about customization:</em></strong></p>
+
+<blockquote>
+  <p>The style of select and options element were built on twitter bootstrap just for scaffolding.  <br>
+  Feel free to change that and build your own style.</p>
+</blockquote>
+
+
+
+<h3 id="known-issues"><strong><em>Known Issues: </em></strong></h3>
+
+<ul>
+<li>The double click event is fired by the select element. Even firing double click outside the selected options, it will go to the target list. This implementation uses HTML select elements and on Internet Explorer the  element doesn’t fire double click.</li>
+</ul>
